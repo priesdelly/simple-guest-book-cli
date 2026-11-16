@@ -6,7 +6,7 @@ models:
   - name: Claude Sonnet (Proxy)
     provider: openai
     model: claude-sonnet-5-5
-    apiBase: http://changeme/v1
+    apiBase: https://changeme/v1
     apiKey: changeme
     roles:
       - chat
@@ -16,5 +16,5 @@ models:
       - tool_use
     requestOptions:
       headers:
-        X-Project-Id: "blog-engine"
+        X-Project-Id: "simple-guest-book-cli"
         X-Model-Provider: "anthropic"
