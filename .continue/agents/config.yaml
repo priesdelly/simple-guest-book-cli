@@ -1,0 +1,20 @@
+name: Continue Project Config
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Claude Sonnet (Proxy)
+    provider: openai
+    model: claude-sonnet-5-5
+    apiBase: http://changeme/v1
+    apiKey: changeme
+    roles:
+      - chat
+      - edit
+      - apply
+    capabilities:
+      - tool_use
+    requestOptions:
+      headers:
+        X-Project-Id: "blog-engine"
+        X-Model-Provider: "anthropic"
